@@ -1,1 +1,28 @@
-/Users/rohit/.gitconfig
+[user]
+	name = rohitkn
+	e-mail = rohitkn@gmail.com
+	email = rohitkn@gmail.com
+[core]
+	editor = mvim -f
+	whitespace = tab-in-indent
+[merge]
+    tool = gitdiff
+    ff = only
+    trustExitCode = false
+[mergetool "gitdiff"]
+  cmd = gitdiff  $LOCAL $REMOTE 
+  trustExitCode = false
+[diff]
+    tool = gitdiff
+[branch]
+    autosetuprebase = always
+[push]
+    default = current
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
+[difftool]
+	prompt = false
+[color]
+	ui = true
