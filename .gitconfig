@@ -6,12 +6,12 @@
 	editor = mvim -f
 	whitespace = tab-in-indent
 [merge]
-    tool = gitdiff
+    tool = gvimdiff
     ff = only
     trustExitCode = false
-[mergetool "gitdiff"]
-  cmd = gitdiff  $LOCAL $REMOTE 
-  trustExitCode = false
+#[mergetool "gitdiff"]
+#  cmd = gitdiff  $LOCAL $REMOTE 
+#  trustExitCode = false
 [diff]
     tool = gitdiff
 [branch]
